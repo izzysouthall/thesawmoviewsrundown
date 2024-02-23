@@ -1,0 +1,182 @@
+<html>
+<head>
+
+  <meta name="viewport" c
+ontent="width=devicewidth, initialscale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+• <picture>
+<source srcset="img_smallflower.jpg" media="(maxwidth: 600px)">
+<source srcset="img_flowers.jpg" media="(maxwidth: 1500px)">
+<source srcset="flowers.jpg">
+
+</picture>
+
+</head>
+<body>
+    <h1> ★˚🎀the saw movies🎀˚★</h1>
+
+    <div class="topnav">
+  <a href="#home" class="active">★ home ★</a>
+  
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">★ News ★</a>
+    <a href="about.html">★ About ★</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon"  onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+ <style>
+
+.left, .right {
+float: left;
+width: 20%; /* The width is 20%, by default */
+}
+.main {
+float: left;
+width: 60%; /* The width is 60%, by default */
+}
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+.left, .main, .right {
+width: 100%; /* The width is 100%, when the viewport is 800px or
+smaller */
+}
+}
+   /* Style the navigation menu */
+   h1 {
+    font-family: 'Single Day', cursive;
+   }
+.topnav {
+  overflow: hidden;
+  background-color: #610332;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #cf0f79;
+  color: rgb(129, 2, 72);
+}
+.bg {
+  background: rgb(255,97,159);
+background: linear-gradient(90deg, rgba(255,97,159,1) 0%, rgba(238,168,125,1) 50%, rgba(255,122,208,1) 100%); 
+}
+.sticky {
+  background-color: #610332;
+  position: fixed;
+  padding: 50;
+  border-radius: 30px;
+  margin-top: 130;
+  margin-left: 590;
+}
+
+</style>
+<div class="bg">
+<img src ="data:image/jpeg;base64,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">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<br>
+this website gives you all the details of the saw franchise and each movie.. a run down of the movies and in my oppinion which i found the best and the worst. we also look at traps used within the movieand rank them based on how well we think wed do in them :]
+
+</col>
+
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<br><br><br><br><br><h1> saw 1</h1>
+Two men awaken to find themselves on the opposite sides of a dead body, each with specific instructions to kill the other or face consequences. These two are the latest victims of the Jigsaw Killer.
+<br><br>Photographer Adam Stanheight (Leigh Whannell) and oncologist Lawrence Gordon (Cary Elwes) regain consciousness while chained to pipes at either end of a filthy bathroom. As the two men realize they've been trapped by a sadistic serial killer nicknamed "Jigsaw" and must complete his perverse puzzle to live, flashbacks relate the fates of his previous victims. Meanwhile, Dr. Gordon's wife (Monica Potter) and young daughter (Makenzie Vega) are forced to watch his torture via closed-circuit video.
+
+<iframe width="677" height="392" src="https://www.youtube.com/embed/jUBB-asru8o" title="SAW 1 Movie Breakdown, Ending Explained, Plot Twist &amp; Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1> saw 2</h1>
+Officer Eric realizes that Jigsaw is back to playing his evil tricks of locking down people and gruesomely torturing them. Eric has to find a way to set his son and others free from Jigsaw's dungeon.
+<br><br>On the hunt for the twisted vigilante and serial killer Jigsaw (Tobin Bell), Detective Eric Matthews (Donnie Wahlberg) and his team must apprehend the elusive murderer to rescue eight people trapped in an abandoned house, before they succumb to his torturous and murderous games. One twist to this task is that Matthews' own son, Daniel (Erik Knudsen), is among the eight people Jigsaw has chosen to test for their lack of morality. With nerve gas pumping through the house, every second counts.
+<iframe width="677" height="392" src="https://www.youtube.com/embed/HRwK6wpeAA0" title="SAW 2 - RECAP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>saw 3</h1>
+Jigsaw orders his apprentice to kidnap a doctor in order to keep him alive while he watches his other apprentice put a man through a brutal test.
+<br><br>Dr. Lynn Denlon (Bahar Soomekh) becomes a pawn in the Jigsaw Killer's (Tobin Bell) latest gory game. Kidnapped and taken to an abandoned warehouse, she finds Jigsaw bedridden and dying. Her task is to keep the maniac alive long enough for Jeff (Angus Macfadyen), a fellow victim, to complete his own task. Each is unaware that Jigsaw has much bigger -- and deadlier -- plans
+<iframe width="677" height="392" src="https://www.youtube.com/embed/38GF9lLoFC8" title="Saw III (2006) in 11 Minutes | Movies In Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1> saw 4</h1>
+While FBI agents Strahm and Perez are still engulfed in the grisly Jigsaw case, SWAT Commander Rigg is roped in as the last pawn for yet another lethal game of the manic Jigsaw.
+<br><br> the autopsy of serial killer Jigsaw (Tobin Bell), a cassette tape is discovered in his stomach in which he warns that his gory games will continue. Sure enough, SWAT Lt. Daniel Rigg (Lyriq Bent) is forced to follow a blood-drenched trail of torture, dismemberment and death in order to find two missing colleagues. A pair of FBI profilers follow Riggs, suspecting he might be Jigsaw's accomplice, even as they unlock the puzzle of the killer's origins, seen in gruesome flashbacks.
+<iframe width="677" height="392" src="https://www.youtube.com/embed/XynGK6e0ZrY" title="Saw IV (2007) in 12 Minutes | Movies In Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>saw 5</h1>
+Although Jigsaw and Amanda are dead, the game still lures five unassuming victims. In the guise of a survival of the fittest routine, the contestants begin their journey towards a deadly end.
+<br><br>Despite the fact that fiendish serial killer Jigsaw is dead, his work lives on through a new apprentice, Lieutenant Mark Hoffman, a cop who appeared to be hot on the murderer's trail. As fellow lawman Agent Peter Strahm begins to suspect Hoffman is Jigsaw's protégé, the fledgling killer sets out to dispose of him.
+<iframe width="677" height="392" src="https://www.youtube.com/embed/96TayLvTMN8" title="Saw Look Back | Saw V (2008)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1> saw 6</h1>
+The legacy of the Jigsaw Killer continues as his successor Mark Hoffman follows his instructions while his wife carries out his final request.
+<br><br>With Jigsaw (Tobin Bell) still directing events from beyond the grave, Hoffman (Costas Mandylor) emerges as the heir to the killer's twisted legacy. But as the FBI closes in, Hoffman sets in motion a game that is designed to reveal Jigsaw's grand scheme.
+<iframe width="677" height="392" src="https://www.youtube.com/embed/v1urc0chujs" title="SAW VI (2009) Movie Breakdown &amp; Review by [SHM]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>saw 7</h1>
+Matt, a detective, runs after Mark Hoffman, whereas Jill Tuck, the widow of Jigsaw attempts to murder him. Hoffman escapes, and Jill offers Gibson to sign an affidavit of crimes committed by Hoffman.
+<br><br>As a fierce battle rages over Jigsaw's (Tobin Bell) terrible legacy, survivors seek support from a fellow survivor and self-help guru, who has a few dark secrets of his own. Meanwhile, crooked cop Hoffman (Costas Mandylor) seeks revenge against Jigsaw's wife and an author who has his own story
+<iframe width="677" height="392" src="https://www.youtube.com/embed/4HzMlvYJvYo" title="SAW 7 - RECAP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>jigsaw</h1>
+The police are at a dead end when investigating numerous ghastly murders in the city that resembles the work of a serial killer who is known to be dead since ten years.
+<br><br>After a series of murders bearing all the markings of the Jigsaw killer, law enforcement officials find themselves chasing the ghost of a man who has been dead for over a decade, and they become embroiled in a new game that's only just begun. Is John Kramer back from the dead to remind the world to be grateful for the gift of life? Or is this a trap set by a killer with designs of his own?
+<iframe width="677" height="392" src="https://www.youtube.com/embed/LcNS9CSHigY" title="JIGSAW (2017) Ending + Twists Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>spiral</h1>
+When a policeman is murdered by a Jigsaw copycat killer, Zeke Banks is assigned to investigate the case. In the process of punishing the perpetrator, he ends up facing the demons of his past.
+<br><br>Working in the shadow of his father, Detective Ezekiel "Zeke" Banks and his rookie partner take charge of an investigation into grisly murders that are eerily reminiscent of the city's gruesome past. Unwittingly entrapped in a deepening mystery, Zeke finds himself at the center of the killer's morbid game.
+<iframe width="677" height="392" src="https://www.youtube.com/embed/vuLR0QCs67M" title="Spiral Explained in 3 Minutes | Chris Rock | Samuel L. Jackson @lionsgateplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>saw 10</h1>
+Hoping for a miraculous cure, John Kramer travels to Mexico for a risky and experimental medical procedure, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer uses deranged and ingenious traps to turn the tables on the con artists.
+<br><br>Hoping for a miraculous cure, John Kramer travels to Mexico for a risky and experimental medical procedure, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer uses deranged and ingenious traps to turn the tables on the con artists.
+<iframe width="677" height="392" src="https://www.youtube.com/embed/yaphl4vOrlM" title="Saw X Explained: Spoiler Filled Recap + Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+<footer style="background-color: bisque; padding: 100px;"><p>&copy; Isabelle Southall</p></footer>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+</script>
+</div>
+</html>
